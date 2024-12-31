@@ -1,0 +1,389 @@
+*{
+  /*  font-family: 'Poppins' , sans-serif;*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header {
+    /* background-color: rgba(240, 240, 240,0.1); */
+    background-color: #000;
+width: 100%;
+position: fixed;
+z-index: 999;
+display: flex;
+justify-content: space-between;
+align-items: center;
+box-shadow: 0 0 10px #fff;
+padding: 10px 200px;
+
+
+}
+.logo{
+    text-decoration: none;
+    color: #b2bbd4;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+
+}
+.navigation a{
+    text-decoration: none;
+    color: #b2bbd4;
+    font-weight: 500;
+    font-size: 1.1em;
+padding: 30px;
+}
+.navigation a:hover{
+    color: #4a4444;
+    
+}
+section {
+padding: 100px 200px;    
+}
+.main {
+        width: 100%;
+min-height: 100vh;
+display : flex;
+align-items: center;
+background: url(images/khelooo.jpg)no-repeat;
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+
+
+}
+.main h2{
+    color: #f0f0f0;
+    font-size:1.4em;
+    font-weight: 500;
+
+}
+.main h2 span{
+   
+    margin-top: 10px;
+    color: #000;
+    font-size: 2em;
+    font-weight: 600;
+
+}
+.main h3{
+    color: #f0f0f0;
+    font-weight: 700;
+    font-size: 2em;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.main-btn{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.975em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+
+}
+.main-btn:hover {
+    background-color: #000;
+    transform: scale(1.1);
+
+}
+.social-icons a{
+    color: #fff;
+    font-size: 1.7em;
+    padding-right: 30px;
+    
+}
+.title{
+
+    display: flex;
+    justify-content: center;
+    color: #000;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px ;
+
+}
+.content {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+    .card{
+        background-color: #fff;
+        width: 21.25em;
+        box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+         border-radius: 10px;
+         padding: 25px;
+         margin: 15px;
+         transition: 0.7s ease;
+          
+ 
+    }
+    .card:hover {
+        transform: scale(1.1);
+   
+    }
+.icon {
+    color: #000;
+    font-size: 8em;
+    text-align: center;
+
+}
+.info{
+text-align: center;
+
+
+}
+.info h3{
+    color: #000;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+.projects{
+    background-color: #38383d;
+}
+
+ .projects .content{
+    margin-top: 30px;
+
+    
+ }
+ .project-card{
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+ }
+ .project-card:hover{
+    transform: scale(1.1);
+ }
+ project-card:hover .project-image{
+opacity: 0.9;
+ }
+ .project-image img{
+    width: 100%;
+ }
+ .project-info {
+    padding: 1em;
+
+ }
+ .project-category{
+    font-size: 0.8em;
+    color: #000;
+ }
+ .project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+ }
+ .more-details{
+    text-decoration: none;
+    color: #000;
+ }
+ .more-details:hover {
+    color: #000;
+ }
+ .contact .icon{
+    font-size: 4.5em;
+ }
+
+ .contact .info a{
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5em;
+ }
+ .ema{
+    
+    padding: 0px 530px;
+    
+}
+
+    .ema h1{
+        color: #000000;
+        margin: 5px;
+        
+    
+}
+
+
+label[for="email-text"] {
+    color: #000000;
+    font-size: 1.2em;
+    margin: -130px;
+ 
+}
+
+label[for="password-text"] {
+    color: #000000;
+    margin: -130px;
+    font-size: 1.2em;
+
+
+    
+}
+.submit{
+    color: #ffffff;
+    background-color: #3478ff;
+
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.2em 7.38em;
+    border-radius: 2px;
+    margin-bottom: 40px;
+    margin: 10px -130px;
+    border: 0.3px solid #bababa;
+    cursor: pointer;
+
+}
+button:active {
+    background-color: #004494;
+    transform: scale(0.95);
+}
+.error-message {
+    color: rgb(0, 0, 0);
+    display: none; 
+    margin:0px -130px;
+    white-space: nowrap;
+    background-color: #ffdada; 
+    border-radius: 5px;
+    text-align:start;
+    font-size: 15px; 
+            width: 525%;
+            padding: 0.5em 0.5em;
+}
+input[type="email"] {
+    color: #000000;
+    text-decoration: none;
+    font-size: 15px;
+    width: 520%;
+    font-weight: 400px;
+    display: inline-block;
+    padding: 0.5em 0.5em;
+    border-radius: 2px;
+    margin-bottom: 40px;
+    margin: -130px;
+    border: 0.3px solid #bababa;
+}
+input[type="password"] {
+    color: #000000;
+    text-decoration: none;
+    font-size: 15px;
+    width: 520%;
+    font-weight: 400px;
+    display: inline-block;
+    border-radius: 2px;
+    margin-bottom: 40px;
+    margin: -130px;
+    border: 0.3px solid #bababa;
+    padding: 0.5em 0.5em;
+    transition: padding-right 0.2s
+
+}
+
+
+.password-container .toggle-password {
+    position: absolute;
+    right: -110px;
+    top: 50%;
+    transform: translateY(-100%);
+    cursor: pointer;
+    color: #aaa;
+}
+.password-container {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+ .footer {
+    background-color: #000;
+    color: #fff; 
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+} 
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.footer-title span{
+    color: #180778;
+}
+.footer .social-icons a{
+   font-size: 1.3em; 
+   padding: 0 12px 0 0;
+}
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+    .navigation a {
+        padding-left: 10px ;
+    }
+    .title{
+        font-size: 1.8em;
+        
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .main-content h2{
+        font-size: 1em;
+    }
+    .main-content h3{
+font-size: 1.6em;
+
+}
+.ema{
+    padding: 200px 200px;
+
+}
+input[type="email"] {
+    width: 250%;
+}
+
+input[type="password"] {
+    width: 250%;
+}
+.submit{
+    width: 250%;
+
+}
+.content{
+    flex-direction: column;
+    align-items: center;
+}
+} 
+@media (max-width:641px){
+
+body{
+    font-size: 12px;
+}
+.main-content h2{
+    font-size: 1.4em;
+}
+}
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+
+    }
+}
+   
